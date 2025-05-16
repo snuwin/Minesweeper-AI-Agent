@@ -37,15 +37,12 @@ class MyAI(AI):
 
         # If uncovered 24 tiles (in a 5x5 board with 1 mine), all safe tiles found, we are done
         if self.uncovered_count >= self.safe_tiles_to_uncover:
-            print(f"[AI DEBUG] Turn: {self.uncovered_count}, Current pos: ({self.current_x}, {self.current_y}), Number: {number}")
-            print(f"[AI DEBUG] Action: LEAVE, Coords: ({self.current_x}, {self.current_y})")
             return Action(AI.Action.LEAVE)
 
         # Step 1: try to find a guaranteed safe move (adjacent to a '0' tile)
         safe_move = self.find_safe_move()
         if safe_move:
             self.current_x, self.current_y = safe_move
-            print(f"[AI DEBUG] Action: UNCOVER, Coords: ({self.current_x}, {self.current_y})")
             return Action(AI.Action.UNCOVER, self.current_x, self.current_y)
 
         # Step 2: If no guaranteed safe move, use model checking on the frontier
@@ -54,12 +51,10 @@ class MyAI(AI):
             safe_tiles = self.model_checking(frontier)
             if safe_tiles:
                 self.current_x, self.current_y = safe_tiles[0]
-                print(f"[AI DEBUG] Action: UNCOVER, Coords: ({self.current_x}, {self.current_y})")
                 return Action(AI.Action.UNCOVER, self.current_x, self.current_y)
 
         # Step 3: If no safe move found after model checking, choose the center-most covered tile
         self.current_x, self.current_y = self.get_center_most_covered()
-        print(f"[AI DEBUG] Action: UNCOVER, Coords: ({self.current_x}, {self.current_y})")
         return Action(AI.Action.UNCOVER, self.current_x, self.current_y)
 
     def find_safe_move(self):
