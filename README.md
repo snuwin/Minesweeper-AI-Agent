@@ -1,8 +1,6 @@
 # Minesweeper AI Agent
 ### CS-199 Final Project
 
-** Author(s): Serena Nguyen, Justin Chung **
-
 ### Overview
 This is an autonomous Minesweeper agent that intelligently solves Minesweeper boards using:
 - Frontier analysis
