@@ -1,3 +1,13 @@
-Codes go in ascending order: Minimal AI, Draft AI, to Final AI
+# Minesweeper AI Agent
+> CS-199 Final Project
 
-Attached PDF file contains the final report for the Final AI statistics and data.
+** Author(s): Serena Nguyen, Justin
+
+This project implements a fully autonomus Minesweeper
+agent that solves any standard Minesweeper board using
+frontier analysis, constraint satisfaction, and model
+checking. 
+
+Original Starter agent was debugged and extended to support
+boards of arbitrary sizes and mine count; polished performance
+and complete game logic.
