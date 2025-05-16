@@ -1,7 +1,7 @@
 # ==============================CS-199==================================
 # FILE:			MyAI.py
 #
-# AUTHOR: 		Serena Nguyen
+# AUTHOR: 		Justin Chung, Serena Nguyen
 #
 # DESCRIPTION:	This file contains the MyAI class. You will implement your
 #				agent in this file. You will write the 'getAction' function,
