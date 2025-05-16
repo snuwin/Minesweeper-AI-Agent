@@ -1,5 +1,5 @@
-## Minesweeper AI Agent
-# CS-199 Final Project
+# Minesweeper AI Agent
+### CS-199 Final Project
 
 ** Author(s): Serena Nguyen, Justin Chung **
 
