@@ -1,7 +1,7 @@
 # ==============================CS-199==================================
 # FILE:			Main.py
 #
-# AUTHOR: 		Serena Nguyen
+# AUTHOR: 		Justin Chung, Serena Nguyen
 #
 # DESCRIPTION:	This file is the entry point for the program. The main
 #				function serves a few purposes: (1) It is the command
